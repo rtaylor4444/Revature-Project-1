@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title id="reim_title">Your Reimbursement</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.comp.css">
+</head>
+
+<body>
+    <div class="u-background-gray">
+        <div id="navbar_container">
+        </div>
+        <h1 class="u-center-text">Current Reimbursement</h1>
+        <form class="form">
+            <div class="form__group">
+                <p id="reim_error" class="form__label--invalid u-center-text"></p>
+                <label class="form__label">Amount</label>
+                <input id="reim_amount" type="number" class="form__input " />
+                <div id="reim_amount_error" class="form__label--invalid"></div>
+                <label class="form__label">Reason</label>
+                <textarea id="reim_reason" class="form__textarea"></textarea>
+                <div id="reim_reason_error" class="form__label--invalid"></div>
+                <div class="u-center-text">
+                    <button id="reim_button" onclick="submitReim()" type="button" disabled class="btn">Submit</button>
+                </div>
+            </div>
+        </form>
+        <footer class="footer">
+            <p class="footer__copyright">
+                Built by Rob Taylor Copyright &copy;
+            </p>
+        </footer>
+    </div>
+</body>
+<script src="scripts/navbar.js"></script>
+<script src="scripts/user_reim_page.js"></script>
+
+</html>

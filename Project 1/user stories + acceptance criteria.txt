@@ -1,0 +1,60 @@
+User Stories
+As a			I want to			so that
+------------------------------------------------------------------------------------------
+Employee		be able to log in		I can send reimbursement requests
+
+Employee		be able to manage and view	I can keep track of the status of
+			my reimbursements		my request
+
+Employee		be able to edit my request	if I make a mistake I can fix it
+
+Employee		view my previous requests	I can keep record of everything
+
+
+
+Manager			be able to view all pending	I can review them quickly
+			requests
+
+Manager			reduce the number of poorly	So they are easy to review
+			written requests
+
+Manager			view my previous requests if	I can keep record
+			I was once an employee
+
+Manager			limit the amount of pending	I don't feel overwhelmed to review
+			requests to review		mass amount of requests
+
+Manager			an interface for promoting	new managers are easy to add 
+			employees
+
+Manager			be able to view statistics	properly make business desicions
+			on reimbursement requests
+
+
+--------------------------------------------------------------------------------------------
+Acceptance Criteria
+Scenario		Given/When/Then				Predicate
+--------------------------------------------------------------------------------------------
+Employee enters credientals in login screen
+			Given 					Existing employee on login page
+			When					Existing employee enters incorrect 
+								credientals
+			Then					Text appears to inform that credentials 
+								are incorrect
+			When					Exisiting employee enters correct credentials
+			Then					Employee is directed to the
+
+								
+Employee logs in for the first time			
+			Given					An employee is logged in
+			Then					The employee can view their
+								previous requests 
+			Then					Employee can view current request
+								submitted
+			Then					Create new request button is shown
+
+			When					Employee clicks create new request button
+			Then					Employee is sent to new request page
+
+
+Employee makes new request		

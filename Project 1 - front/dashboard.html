@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title id="dashboard_title">Dashboard</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.comp.css">
+</head>
+
+<body>
+    <div class="u-background-gray">
+        <div id="navbar_container">
+        </div>
+        <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary">Dashboard</h2>
+        </div>
+        <div class="row">
+            <div class="col-1-of-2 u-center-text">
+                <h2 class="u-margin-bottom-med">Previous Requests</h2>
+                <div class="u-center-text u-margin-bottom-med">
+                    <h3>Search by ID</h3>
+                    <input id="reim_search" type="number" class="form__input " />
+                </div>
+                <div id="prev_req_container">
+                    <h3>You have no previous requests</h3>
+                </div>
+            </div>
+            <div class="col-1-of-2 u-center-text">
+                <h2 class="u-margin-bottom-med">Current Request</h2>
+                <div id="curr_req_container" class="u-margin-bottom-med">
+                    <h3>You have no pending requests</h3>
+                </div>
+                <button id="pending_reim_button" type="button" disabled class="btn">New Request</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p class="footer__copyright">
+            Built by Rob Taylor Copyright &copy;
+        </p>
+    </footer>
+</body>
+<script src="scripts/navbar.js"></script>
+<script src="scripts/dashboard_page.js"></script>
+
+</html>

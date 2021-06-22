@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Reimbursement Service</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.comp.css">
+</head>
+
+<body>
+    <div class="u-background-gray">
+        <h1 class="u-center-text">Login</h1>
+        <form class="form">
+            <div class="form__group">
+                <p id="login_error" class="form__label--invalid u-center-text"></p>
+                <label class="form__label">Username</label>
+                <input id="login_username" type="text" class="form__input " />
+                <div id="login_username_error" class="form__label--invalid"></div>
+                <label class="form__label">Password</label>
+                <input id="login_password" type="password" class="form__input " />
+                <div id="login_password_error" class="form__label--invalid"></div>
+                <div class="u-center-text">
+                    <button id="login_button" onclick="submitLoginForm()" type="button" disabled
+                        class="btn">Login</button>
+                </div>
+                <p class="form__info">
+                    Do you have an account? If not you need to register
+                    <a href="new_user.html">here.</a>
+                </p>
+            </div>
+        </form>
+        <footer class="footer">
+            <p class="footer__copyright">
+                Built by Rob Taylor Copyright &copy;
+            </p>
+        </footer>
+    </div>
+</body>
+<script src="scripts/login_page.js"></script>
+
+</html>

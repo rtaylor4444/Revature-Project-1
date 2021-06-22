@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title id="manage_title">Manage</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.comp.css">
+</head>
+
+<body>
+    <div class="u-background-gray">
+        <div id="navbar_container">
+        </div>
+        <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary">Manage</h2>
+        </div>
+        <div class="row">
+            <div class="col-1-of-2 u-center-text">
+                <h2 class="u-margin-bottom-med">All Requests</h2>
+                <div class="u-center-text u-margin-bottom-med">
+                    <h3>Search by ID</h3>
+                    <input id="all_reim_search" type="number" class="form__input " />
+                </div>
+                <div id="all_req_container">
+                    <h3>There are no requests</h3>
+                </div>
+            </div>
+            <div class="col-1-of-2 u-center-text">
+                <h2 class="u-margin-bottom-med">Pending Requests</h2>
+                <div class="u-center-text u-margin-bottom-med">
+                    <h3>Search by ID</h3>
+                    <input id="pend_reim_search" type="number" class="form__input " />
+                </div>
+                <div id="pend_req_container" class="u-margin-bottom-med">
+                    <h3>There are no requests</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p class="footer__copyright">
+            Built by Rob Taylor Copyright &copy;
+        </p>
+    </footer>
+</body>
+<script src="scripts/navbar.js"></script>
+<script src="scripts/manage_page.js"></script>
+
+</html>
